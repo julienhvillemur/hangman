@@ -20,16 +20,20 @@ class Hangman:
         if self.guess in self.word:
             print(f'Good guess! {self.guess} is in the word.')
             word_index = self.word.index(self.guess)
+            #Check if working
+            print(word_index)
             #Replace letters in word_guessed list
             for letter in self.word:
                 if letter == self.guess:
-                    self.word_guessed[word_index].replace('_', self.guess)
+                    self.word_guessed[word_index] = self.guess
             self.num_letters -= 1
             #check if working
             print(self.word_guessed)
+            print(self.num_letters)
         else:
-            print(f'Sorry, {self.guess} is not in the word. Try again')
-
+            self.num_lives -= 1
+            print(f'Sorry, {self.guess} is not in the word. Try again\nYou have {self.num_lives} lives left.')
+            
     # Continuously asks the user for a new letter for the hangman game
     def ask_for_input(self):
         while True:
@@ -41,6 +45,7 @@ class Hangman:
                 print('You already tried that letter!')
             else:
                 self.check_guess(self.guess)
+                #Will the below run if the above function is called first?
                 self.list_of_guesses.append(self.guess)
                 
 word_list = ['kiwi', 'grape', 'apple', 'passion fruit', 'banana']
