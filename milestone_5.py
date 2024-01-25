@@ -78,10 +78,10 @@ class Hangman:
             self.check_guess(self.guess)
             self.list_of_guesses.append(self.guess)
 
- '''
- The list below provides the game with a variety of strings to select at random.
- The list is then passed as an argument into the Hangman class and the play_game method to initiate the game.
- '''               
+    '''
+    The list below provides the game with a variety of strings to select at random.
+    The list is then passed as an argument into the Hangman class and the play_game method to initiate the game.
+    '''               
 word_list = ['kiwi', 'grape', 'apple', 'strawberry', 'banana']
 
 game = Hangman(word_list)
