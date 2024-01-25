@@ -6,7 +6,7 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
 ## Installation:
-Save the `milestone_5.py` in your selected directory and opon the file in a python interpreter. Ensure that the `random` and `itertools` modules are available for import into the hangman file. The game will make use of the available `Hangman` class to run.
+Save the `milestone_5.py` file in your selected directory and open the file within a python interpreter. Ensure that the `random` and `itertools` modules are available for import into the hangman file. The game will make use of the available `Hangman` class to run.
 
 ## Playing The Game:
 Run the `milestone_5.py` file and a prompt will appear. Enter a single letter as prompted. If more than one character is entered or a non-alphabetical character is used, the game will prompt the user to try again. If the letter is in the word, the game will present where in the word it is matched and you will be prompted for another guess. If the letter is not in the word, you will lose one life and be prompted to re-guess. If you lose all available lives, the game will end and you will have to restart by running `milestone_5.py` again. If all the letters in the word are guessed, you will received a prompt to say that you have won the game and it will terminate.
